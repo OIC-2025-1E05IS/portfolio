@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+  <!--  Header  -->
+  <header class="header">
+    <div class="header__inner inner">
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle__btn" aria-label="メニューを開く"><span></span></label>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#top" class="is-active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">KAWAMOTO TOMOKA</h1>
+        <p class="hero__sub">PORTFOLIO</p>
+      </div>
+    </section>
+
+    <section  class　="about" id="about">
+      <div class="about__inner inner">
+        <div class="about__img">
+          <img src="image/pro_icon.png" alt="自分のアイコン">
+        </div>
+
+        <div class="about__text">
+          <div class="section-title">
+            <p class="section-title__en">ABOUT</p>
+            <h2 class="section-title__ja">私について</h2>
+          </div>
+          <p>
+          約7年間、企業で事務職を経験。<br>
+          その後、IT分野の知識や技術を身につけるために再進学し、現在は大阪情報コンピュータ専門学校でC#を中心としたプログラミングを学んでいます。<br>
+          授業やインターンを通じてWebサイト制作の面白さを実感し、Web制作の仕事に携わりたいと考えるようになりました。<br>
+          現在はHTML・CSSに加え、JavaScriptやSassの習得にも取り組んでいます。<br>
+          </p>
+        </div>
+
+        <dl class="about__profile">
+          <div class="profile-item">
+            <i class="fa-regular fa-user" aria-hidden="true"></i>
+            <div>
+              <dt class="profile-item__label">Name</dt>
+              <dd class="profile-item__value">川本 朋華</dd>
+            </div>
+          </div>
+          <div class="profile-item">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <div>
+              <dt class="profile-item__label">School</dt>
+              <dd class="profile-item__value">大阪情報コンピューター専門学校</dd>
+            </div>
+            </div>
+            <div class="profile-item">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <dt class="profile-item__label">Age</dt>
+              <dd class="profile-item__value">27</dd>
+            </div>
+          </div>
+          </dl>
+                </div>
+    </section>
+
+    <!-- Works -->
+    <section class="works" id="works">
+      <div class="inner">
+        <div class="works__head">
+          <div class="section-title">
+            <p class="section-title__en">WORKS</p>
+            <h2 class="section-title__ja">制作実績</h2>
+          </div>
+        </div>
+
+        <ul class="works__list">
+          <li class="work-card">
+            <a href="https://github.com/OIC-2025-1E05IS/OrderApp" class="work-card__link">
+              <div class="work-card__img">
+                <img src="image/work1.png" alt="オーダー端末">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">病院Webサイト</h3>
+                <p class="work-card__tags">C# / WPF</p>
+                <span class="work-card__arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              </div>
+            </a>
+          </li>
+          <li class="work-card">
+            <a href="http://127.0.0.1:5500/rai-site/index.html" class="work-card__link">
+              <div class="work-card__img">
+                <img src="image/work2.png" alt="愛犬紹介webサイト">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">企業サイト</h3>
+                <p class="work-card__tags">HTML / CSS  </p>
+                <span class="work-card__arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              </div>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <!--  Skills -->
+    <section class="skills" id="skills">
+      <div class="inner">
+        <div class="section-title">
+          <p class="section-title__en">SKILLS</p>
+          <h2 class="section-title__ja">言語・エディタ・開発環境・フレームワーク
+          </h2>
+        </div>
+
+        <ul class="skills__list">
+          <li class="skill-item">
+            <div class="skill-item__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <h3 class="skill-item__title">HTML / CSS <br> C# </h3>
+          </li>
+          
+          <li class="skill-item">
+            <div class="skill-item__icon"><i class="fa-solid fa-gear" aria-hidden="true"></i></div>
+            <h3 class="skill-item__title">console / WPF<br>SQL Server</h3>
+          </li>
+          
+        
+          <li class="skill-item">
+            <div class="skill-item__icon"><i class="fa-solid fa-desktop" aria-hidden="true"></i></div>
+            <h3 class="skill-item__title">Visual Studio <br> VS Code<br>Git / GitHub</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+   
+         
+    <!--  Contact  -->
+<section class="contact" id="contact">
+      <div class="inner">
+        <div class="section-title">
+          <p class="section-title__en">CONTACT</p>
+          <h2 class="section-title__ja">連絡先</h2>
+        </div>
+        <p class="email-text">Email：
+        <a href="mailto:c5084@oic.jp" class="email">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>c5084@oic.jp
+        </a></p>
+        <p class class="tel-text">  TEL：
+        <a href="tel:09041133190" class="tel">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>090-4113-3190
+        </a>
+        </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--  Footer  -->
+  <footer class="footer">
+    <small>&copy; 2026 KAWAMOTO TOMOKA</small>
+    <a href="#top" class="page-top" aria-label="ページの先頭へ戻る"><i class="fa-solid fa-chevron-up" aria-hidden="true"></i></a>
+  </footer>
+
+</body>
+
+</html>
