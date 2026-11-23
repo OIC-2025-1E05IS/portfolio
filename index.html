@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAWAMOTO TOMOKA | PORTFOLIO</title>
+<meta name="description" content="川本朋華のWeb制作ポートフォリオ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<header class="header">
+  <div class="header__inner">
+    <a class="brand" href="#top" aria-label="トップへ">Portfolio<span>.</span></a>
+    <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="#top">Home</a><a href="#about">About</a><a href="#works">Works</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__inner">
+      <h1>KAWAMOTO<br><span>TOMOKA</span></h1>
+      <p class="hero__sub">PORTFOLIO</p>
+      <a class="scroll-link" href="#about">SCROLL <span>↓</span></a>
+    </div>
+    <div class="hero__shape shape-one" aria-hidden="true"></div><div class="hero__shape shape-two" aria-hidden="true"></div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="section__inner">
+      <div class="section-heading"><p class="section-heading__en">ABOUT</p><h2>私について</h2><span class="section-heading__line"></span></div>
+      <div class="about-grid">
+        <div class="about__image-wrap"><img src="image/pro_icon.png" alt="プロフィールアイコン" class="asset-image"><div class="image-placeholder">PROFILE</div></div>
+        <div class="about__text">
+          <p>約7年間、企業で事務職を経験。<br>その後、IT分野の知識や技術を身につけるために再進学し、現在は大阪情報コンピュータ専門学校でC#を中心としたプログラミングを学んでいます。</p>
+          <p>授業やインターンを通じてWebサイト制作の面白さを実感し、Web制作の仕事に携わりたいと考えるようになりました。現在はHTML・CSSに加え、JavaScriptやSassの習得にも取り組んでいます。</p>
+          <div class="profile-box"><div><span>NAME</span><strong>川本 朋華</strong></div><div><span>SCHOOL</span><strong>大阪情報コンピュータ専門学校</strong></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section works" id="works">
+    <div class="section__inner">
+      <div class="section-heading"><p class="section-heading__en">WORKS</p><h2>制作実績</h2><span class="section-heading__line"></span><p class="section-heading__note">作品カードをクリックすると詳細をご覧いただけます。</p></div>
+      <div class="works-grid">
+        <button class="work-card" data-work="order" type="button" aria-label="githubを開くく">
+          <div class="work-card__image work-image--order"><img src="image/work1.png" alt="病院Webサイトの制作画面" class="asset-image">
+          <div class="work-card__body"><div><h3>オーダー端末</h3><p>C# / WPF</p></div><span class="work-card__arrow">↗</span></div>
+        </button>
+        <button class="work-card" data-work="site" type="button" aria-label="ページを開く">
+          <div class="work-card__image work-image--site"><img src="image/work2.png" alt="ペット紹介" class="asset-image">
+          <div class="work-card__body"><div><h3>愛犬紹介サイト</h3><p>HTML / CSS</p></div><span class="work-card__arrow">↗</span></div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="section__inner">
+      <div class="section-heading"><p class="section-heading__en">SKILLS</p><h2>学習中の技術・ツール</h2><span class="section-heading__line"></span></div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-card__number">01</span><h3>LANGUAGE</h3><p>HTML / CSS<br>C# / JavaScript</p></article>
+        <article class="skill-card"><span class="skill-card__number">02</span><h3>DEVELOPMENT</h3><p>Console / WPF<br>SQL Server</p></article>
+        <article class="skill-card"><span class="skill-card__number">03</span><h3>TOOLS</h3><p>Visual Studio / VS Code<br>Git / GitHub</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="section__inner contact__inner">
+      <div class="section-heading"><p class="section-heading__en">CONTACT</p><h2>連絡先</h2><span class="section-heading__line"></span></div>
+      <p>ご覧いただきありがとうございます。</p><a class="contact-mail" href="mailto:c5084@oic.jp">✉　c5084@oic.jp</a>
+    </div>
+  </section>
+</main>
+<footer class="footer"><small>© 2026 KAWAMOTO TOMOKA</small><a href="#top" class="page-top" aria-label="ページの先頭へ">↑</a></footer>
+
+<div class="modal" id="work-modal" aria-hidden="true">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal__close" type="button" aria-label="閉じる" data-close>×</button>
+    <div class="modal__image"><img id="modal-image" src="" alt="作品画像"><div class="modal__image-placeholder" id="modal-image-placeholder"></div></div>
+    <div class="modal__content"><p class="modal__eyebrow">PROJECT DETAIL</p><h2 id="modal-title"></h2><p class="modal__tags" id="modal-tags"></p><p id="modal-description"></p><div class="modal__actions" id="modal-actions"></div></div>
+  </div>
+</div>
+
+<script>
+const projectDetails = {
+  order: {
+    title: '端末オーダーシステム', tags: 'C# / WPF', image: 'image/work1.png',
+    description: '学校で取り組んだ制作物です。画像クリックから実装できます。',
+    links: [{label: 'GitHubでソースを見る ↗', url: 'https://github.com/OIC-2025-1E05IS/OrderApp'}]
+  },
+  site: {
+    title: '愛犬紹介サイト',
+    tags: 'HTML / CSS',
+    image: 'image/work2.png',
+    description: 'HTML・CSSを使用して制作した愛犬紹介サイトです。',
+    links: [
+      {
+        label: 'サイトを見る ↗',
+        url: 'https://oic-2025-1e05is.github.io/rai-saite/'
+      }
+    ]
+  }
+}
+const modal = document.getElementById('work-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalTags = document.getElementById('modal-tags');
+const modalImage = document.getElementById('modal-image');
+const modalImagePlaceholder = document.getElementById('modal-image-placeholder');
+const modalDescription = document.getElementById('modal-description');
+const modalActions = document.getElementById('modal-actions');
+let lastFocused = null;
+
+document.querySelectorAll('.work-card').forEach(card => card.addEventListener('click', () => {
+  const project = projectDetails[card.dataset.work];
+  lastFocused = card;
+  modalTitle.textContent = project.title;
+  modalTags.textContent = project.tags;
+  modalImage.src = project.image || '';
+  modalImage.alt = project.title + 'の作品画像';
+  modalImage.classList.remove('is-loaded');
+  modalImagePlaceholder.textContent = project.title + ' / PROJECT IMAGE';
+  modalImagePlaceholder.classList.remove('is-hidden');
+  modalImage.onload = () => { modalImage.classList.add('is-loaded'); modalImagePlaceholder.classList.add('is-hidden'); };
+  modalImage.onerror = () => { modalImage.classList.remove('is-loaded'); modalImagePlaceholder.classList.remove('is-hidden'); };
+  modalDescription.textContent = project.description;
+  modalActions.replaceChildren();
+  project.links.forEach(link => {
+    const a = document.createElement('a');
+    a.href = link.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    a.className = 'modal__link'; a.textContent = link.label;
+    modalActions.appendChild(a);
+  });
+  modal.classList.add('is-open'); modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open'); modal.querySelector('.modal__close').focus();
+}));
+function closeModal() {
+  modal.classList.remove('is-open'); modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open'); if (lastFocused) lastFocused.focus();
+}
+modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+document.addEventListener('keydown', e => { if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+
+document.querySelectorAll('.asset-image').forEach(img => {
+  const placeholder = img.nextElementSibling;
+  img.addEventListener('load', () => { img.classList.add('is-loaded'); placeholder.classList.add('is-hidden'); });
+  img.addEventListener('error', () => { img.classList.remove('is-loaded'); placeholder.classList.remove('is-hidden'); });
+});
+const menuToggle = document.querySelector('.menu-toggle');
+menuToggle.addEventListener('click', () => {
+  const open = document.querySelector('.nav').classList.toggle('is-open');
+  menuToggle.setAttribute('aria-expanded', open);
+});
+document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => {
+  document.querySelector('.nav').classList.remove('is-open'); menuToggle.setAttribute('aria-expanded', 'false');
+}));
+</script>
+</body>
+</html>
